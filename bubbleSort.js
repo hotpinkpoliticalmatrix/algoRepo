@@ -1,5 +1,4 @@
 function bubbleSort(array) {
-  debugger;
   let swaps = swapEls(array, 0);
   while (swaps > 0) {
     swaps = swapEls(array, 0);
