@@ -1,5 +1,4 @@
 function hourglassSum(arr) {
-  debugger;
   let largestSum = null;
   for (let i = 0; i < arr.length - 2; i++) {
     let firstRow = arr[i];
