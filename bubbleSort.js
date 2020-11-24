@@ -20,3 +20,18 @@ function swapEls(ar, swaps) {
 }
 
 console.log(bubbleSort([8, 5, 2, 9, 5, 6, 3]));
+
+function countSwaps(a) {
+  let numSwaps = 0;
+  for (let i = 0; i < a.length; i++) {
+    for (let j = i + 1; j < a.length; j++) {
+      if (a[i] > a[j]) {
+        numSwaps++;
+        swap(a[i], a[j]);
+      }
+    }
+  }
+  console.log(`Array is sorted in ${numSwaps} swaps.`);
+  console.log(`First Element: ${a[0]}`);
+  console.log(`Last Element: ${a[a.length - 1]}`);
+}

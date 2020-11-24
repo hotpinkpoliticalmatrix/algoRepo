@@ -34,12 +34,14 @@
 // }
 
 function sherlockAndAnagrams(s) {
+  debugger;
   let count = 0;
   for (let i = 1; i < s.length; i++) {
     let found = {};
 
     for (let j = 0; j + i <= s.length; j++) {
-      let substr = s.substr(j, i).split("").sort().join("");
+      let res = s.substr(j, i);
+      let substr = res.split("").sort().join("");
       if (found[substr]) {
         count += found[substr];
         found[substr]++;
